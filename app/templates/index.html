@@ -7,11 +7,41 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
         <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 
-        <title>{% block title %}{% endblock %}This is {{ name }} Website</title>
+        <title>This is {{ name }} Website</title>
     {% endblock %}
 
 </head>
 <body>
-My name is: {{ name }}
+    <div id="title" class="medviolet font_futura" style="background-color: antiquewhite">
+        <h1>{{ name }}'s Homepage</h1>
+    </div>
+    <div id="main_body" class="font_rockwell">
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Sem integer vitae justo eget magna fermentum. Etiam sit amet nisl purus. Eget mi proin sed libero
+        enim sed. Donec massa sapien faucibus et molestie ac. Non tellus orci ac auctor. Nunc mattis enim ut tellus
+        elementum sagittis vitae. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Dictum
+        non consectetur a erat nam. Suspendisse in est ante in. Nisi scelerisque eu ultrices vitae. Eget duis at tellus
+        at urna. Gravida arcu ac tortor dignissim convallis aenean et. Non curabitur gravida arcu ac tortor dignissim.
+        Ante in nibh mauris cursus mattis molestie a.
+        </p>
+        <p>
+        Proin nibh nisl condimentum id venenatis. Nulla porttitor massa id neque aliquam vestibulum. At elementum eu
+        facilisis sed odio. Convallis convallis tellus id interdum velit. Pellentesque adipiscing commodo elit at
+        imperdiet. Mattis rhoncus urna neque viverra. Cras ornare arcu dui vivamus arcu felis bibendum ut. Ullamcorper
+        velit sed ullamcorper morbi tincidunt. Condimentum id venenatis a condimentum. Nulla facilisi cras fermentum
+        odio eu feugiat pretium. Id ornare arcu odio ut sem nulla pharetra diam. Lectus proin nibh nisl condimentum.
+        </p>
+        <p>
+        Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Mauris pellentesque pulvinar
+        pellentesque habitant morbi tristique senectus et netus. Sollicitudin aliquam ultrices sagittis orci a
+        scelerisque purus semper eget. Sed blandit libero volutpat sed cras ornare arcu. Mauris sit amet massa vitae
+        tortor. Lacus laoreet non curabitur gravida. Ligula ullamcorper malesuada proin libero nunc. Laoreet sit amet
+        cursus sit amet dictum. Pharetra massa massa ultricies mi quis hendrerit dolor. Vel risus commodo viverra
+        maecenas accumsan. Lacus luctus accumsan tortor posuere ac ut consequat semper. Velit dignissim sodales ut eu
+        sem integer vitae justo eget. Posuere ac ut consequat semper viverra nam libero. Amet purus gravida quis blandit
+        turpis cursus.
+        </p>
+    </div>
 </body>
 </html>
