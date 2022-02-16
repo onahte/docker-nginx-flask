@@ -6,6 +6,10 @@ body {
     color : mediumvioletred;
 }
 
+.text_bigger {
+    font-size : 200%;
+}
+
 .font_futura {
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
 }
