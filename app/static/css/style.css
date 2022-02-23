@@ -7,7 +7,7 @@ body {
 }
 
 .text_bigger {
-    font-size : 200%;
+    font-size : 125%;
 }
 
 .font_futura {
@@ -20,4 +20,16 @@ body {
 
 .font_monaco {
     font-family: monaco, Consolas, Lucida Console, monospace;
+    color: #e5e5e5;
 }
+
+.container {
+  max-width: 960px;
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, 1);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+

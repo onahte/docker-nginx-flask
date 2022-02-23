@@ -3,45 +3,88 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     {% block head %}
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
         <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
-
-        <title>This is {{ name }} Website</title>
     {% endblock %}
 
 </head>
-<body>
-    <div id="title" class="medviolet font_futura" style="background-color: antiquewhite">
-        <h1>{{ name }}'s Homepage</h1>
+    <h1 class="visually-hidden">Ethan Oh</h1>
+
+      <!-- Bootstrap core CSS -->
+<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/product.css" rel="stylesheet">
+
+
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">Welcome!</h4>
+          <p class="text-muted">This is my NJIT IS601 project site. </p>
+          <p class="text-muted">This site implements flask, CSS, Python and bootstrap. </p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Menu</h4>
+          <ul class="list-unstyled">
+            <li><a href="/" class="active text-white">Home</a></li>
+            <li><a href="/about" class="text-white">About</a></li>
+          </ul>
+          <h4 class="text-white">Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://www.linkedin.com/in/ethan-oh-b3bba891/" class="text-white">LinkedIn</a></li>
+            <li><a href="mailto: eo238@njit.edu" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div id="main_body" class="font_rockwell">
-        <p>
-            <span class="text_bigger">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Sem integer vitae justo eget magna fermentum. Etiam sit amet nisl purus. Eget mi proin sed libero
-        enim sed. Donec massa sapien faucibus et molestie ac. Non tellus orci ac auctor. Nunc mattis enim ut tellus
-        elementum sagittis vitae. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Dictum
-        non consectetur a erat nam. Suspendisse in est ante in. Nisi scelerisque eu ultrices vitae. Eget duis at tellus
-        at urna. Gravida arcu ac tortor dignissim convallis aenean et. Non curabitur gravida arcu ac tortor dignissim.
-        Ante in nibh mauris cursus mattis molestie a.
-        </p>
-        <p>
-        Proin nibh nisl condimentum id venenatis. Nulla porttitor massa id neque aliquam vestibulum. At elementum eu
-        facilisis sed odio. Convallis convallis tellus id interdum velit. Pellentesque adipiscing commodo elit at
-        imperdiet. Mattis rhoncus urna neque viverra. Cras ornare arcu dui vivamus arcu felis bibendum ut. Ullamcorper
-        velit sed ullamcorper morbi tincidunt. Condimentum id venenatis a condimentum. Nulla facilisi cras fermentum
-        odio eu feugiat pretium. Id ornare arcu odio ut sem nulla pharetra diam. Lectus proin nibh nisl condimentum.
-        </p>
-        <p>
-        Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Mauris pellentesque pulvinar
-        pellentesque habitant morbi tristique senectus et netus. Sollicitudin aliquam ultrices sagittis orci a
-        scelerisque purus semper eget. Sed blandit libero volutpat sed cras ornare arcu. Mauris sit amet massa vitae
-        tortor. Lacus laoreet non curabitur gravida. Ligula ullamcorper malesuada proin libero nunc. Laoreet sit amet
-        cursus sit amet dictum. Pharetra massa massa ultricies mi quis hendrerit dolor. Vel risus commodo viverra
-        maecenas accumsan. Lacus luctus accumsan tortor posuere ac ut consequat semper. Velit dignissim sodales ut eu
-        sem integer vitae justo eget. Posuere ac ut consequat semper viverra nam libero. Amet purus gravida quis blandit
-        turpis cursus.
-        </p>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+        <strong>Ethan Oh</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
+  </div>
+</header>
+
+<main>
+  <div class="text-center position-relative overflow-hidden">
+    <img src="/static/images/bigfootprayinghands_nobg.png" width="500" height="500" mt-10>
+  </div>
+  <div class="container">
+    <p> Illustration by Angela Oh</p>
+    <hr class="featurette-divider">
+  </div>
+</main>
+  <footer class="container">
+    <p>&copy; 2022 Ethan Oh </p>
+  </footer>
+
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+  </body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 </body>
 </html>
