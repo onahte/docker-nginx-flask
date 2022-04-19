@@ -1,8 +1,9 @@
-# Docker Nginx Flask Project Setup
+# Docker Nginx Flask Project 
 
-Just Run:
+## Summary
 
-docker compose up --build to get it to run and go to locahost to see the site.
+The goal here was to start getting familiar with webservicing, Nginx and Docker. The concept of Docker deployment locally and on the web was explored using CLI docker commands. e.g. docker compose up --build to deploy to locahost.
+
 
 ## Screenshot of Running Program
 
